@@ -1,0 +1,193 @@
+1. What is the primary purpose of the Spring Framework in Java application development?
+
+A. To replace the Java programming language.
+B. To simplify enterprise application development through dependency injection and modular infrastructure.
+C. To eliminate the need for databases.
+D. To provide only frontend development capabilities.
+
+2. What is Inversion of Control (IoC) in Spring?
+
+A. Objects create and manage all their dependencies independently.
+B. Spring takes responsibility for creating and managing application objects and their dependencies.
+C. Java automatically converts classes into interfaces.
+D. Spring manages only database transactions.
+
+3. Which Spring component is responsible for managing application beans?
+
+A. DispatcherServlet
+B. ApplicationContext
+C. JdbcTemplate
+D. ModelMapper
+
+4. What is Dependency Injection (DI)?
+
+A. Creating database tables automatically.
+B. Injecting required dependencies into an object rather than having the object create them itself.
+C. Converting Java classes into database records.
+D. Managing HTTP requests and responses.
+
+5. Which dependency injection approach is generally recommended for mandatory dependencies in Spring applications?
+
+A. Field injection
+B. Static injection
+C. Constructor injection
+D. Manual object creation inside every method
+
+6. What is the purpose of the @Component annotation?
+
+A. To mark a Java class as a Spring-managed component.
+B. To create a database table.
+C. To configure HTTP security.
+D. To define a REST endpoint.
+
+7. What is the difference between @Component, @Service and @Repository?
+
+A. All three are unrelated to Spring bean management.
+B. They are stereotype annotations, with @Service and @Repository expressing specific architectural roles.
+C. @Service is used only for database connections.
+D. @Repository is used only for REST controllers.
+
+8. What is the default bean scope in the Spring Framework?
+
+A. Prototype
+B. Request
+C. Session
+D. Singleton
+
+9. What happens when a Spring bean is configured with prototype scope?
+
+A. Only one instance is created for the entire application.
+B. A new bean instance is created each time the container is asked for that bean.
+C. The bean is created only when the application shuts down.
+D. The bean is shared across all JVM applications.
+
+10. What is the main responsibility of @Autowired?
+
+A. To automatically inject a suitable dependency into a Spring-managed object.
+B. To configure database indexes.
+C. To define application URLs.
+D. To generate REST API documentation.
+
+11. What is the purpose of @Transactional in Spring?
+
+A. To configure application logging.
+B. To manage transaction boundaries for operations such as database updates.
+C. To configure HTTP request mappings.
+D. To create application beans.
+
+12. Which Spring annotation is commonly used to define Java-based configuration?
+
+A. @Entity
+B. @Configuration
+C. @RequestBody
+D. @ResponseStatus
+
+13. What is the primary advantage of Spring Boot over traditional Spring application configuration?
+
+A. It eliminates Java classes and interfaces.
+B. It reduces manual configuration through auto-configuration and starter dependencies.
+C. It requires an external application server for every application.
+D. It replaces the Spring Framework completely.
+
+14. What is the purpose of the @SpringBootApplication annotation?
+
+A. It combines @Configuration, @EnableAutoConfiguration and @ComponentScan.
+B. It combines @Entity, @Table and @Id.
+C. It configures only database connectivity.
+D. It enables only REST API security.
+
+15. Which method is commonly used to start a Spring Boot application?
+
+A. System.start()
+B. SpringApplication.run()
+C. ApplicationContext.execute()
+D. DispatcherServlet.start()
+
+16. What is Spring Boot auto-configuration?
+
+A. A feature that automatically generates all Java source code.
+B. A feature that configures application components based on classpath dependencies, existing beans and configuration conditions.
+C. A feature that automatically creates user accounts.
+D. A feature that converts Java code into SQL.
+
+17. What is the purpose of Spring Boot starter dependencies?
+
+A. To provide a convenient way to include commonly required dependency groups.
+B. To replace the Java compiler.
+C. To create application database backups.
+D. To configure only application logging.
+
+18. Which file is commonly used to configure Spring Boot application properties?
+
+A. pom.xml
+B. application.properties
+C. web.xml
+D. settings.java
+
+19. What is the purpose of an embedded Tomcat server in Spring Boot?
+
+A. It provides an embedded web server so the application can run without deploying to a separately installed Tomcat server.
+B. It manages Java object serialization.
+C. It automatically generates database schemas.
+D. It replaces Maven dependency management.
+
+20. Which annotation is typically used to create a REST controller in Spring Boot?
+
+A. @Repository
+B. @Service
+C. @RestController
+D. @Configuration
+
+21. What is the difference between @Controller and @RestController?
+
+A. @Controller is used only for databases, while @RestController is used only for security.
+B. @RestController combines @Controller and @ResponseBody behavior, making response bodies the default.
+C. Both annotations are used only for dependency injection.
+D. @Controller cannot process HTTP requests.
+
+22. What is the purpose of @GetMapping in Spring Boot?
+
+A. To handle HTTP GET requests for a specified URL pattern.
+B. To handle only HTTP DELETE requests.
+C. To create database relationships.
+D. To configure application logging.
+
+23. Which annotation is used to bind the JSON request body to a Java object in a REST API?
+
+A. @PathVariable
+B. @RequestParam
+C. @RequestBody
+D. @Autowired
+
+24. What is the purpose of Spring Boot Actuator?
+
+A. To provide application monitoring, health checks and operational endpoints.
+B. To create Java interfaces automatically.
+C. To replace Spring Data JPA.
+D. To manage Maven repositories.
+
+25. A Spring Boot application fails to start because two beans of the same type are available for dependency injection. Which annotation can help Spring select the intended bean?
+
+A. @Primary
+B. @Entity
+C. @Transactional
+D. @RequestMapping
+
+
+
+Question	Answer	Question	Answer
+1	B	14	A
+2	B	15	B
+3	B	16	B
+4	B	17	A
+5	C	18	B
+6	A	19	A
+7	B	20	C
+8	D	21	B
+9	B	22	A
+10	A	23	C
+11	B	24	A
+12	B	25	A
+13	B		
+
+ 

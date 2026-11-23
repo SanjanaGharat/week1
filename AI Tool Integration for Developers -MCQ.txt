@@ -1,0 +1,190 @@
+1. What is the primary objective of AI-assisted coding in software development?
+
+A. To completely eliminate the need for developers
+B. To improve developer productivity through code suggestions, generation, and analysis
+C. To replace the Java compiler
+D. To eliminate software testing
+
+2. When using an AI coding assistant in VS Code, which input generally produces the most accurate code generation?
+
+A. A vague instruction such as "write some code"
+B. A detailed prompt specifying functionality, input, output, constraints, and programming language
+C. Only the name of the Java project
+D. A request without specifying expected behavior
+
+3. A developer wants AI to generate a Java method that calculates compound interest. Which information should be included in the prompt for better results?
+
+A. Only the method name
+B. Input parameters, calculation formula, expected return value, and validation requirements
+C. Only the Java file name
+D. The operating system version
+
+4. What is the main advantage of using AI-powered code completion tools?
+
+A. They automatically guarantee error-free applications
+B. They suggest context-aware code while developers are writing programs
+C. They eliminate the requirement for JDK installation
+D. They automatically deploy applications to production
+
+5. What is the most appropriate use of AI-based code explanation functionality?
+
+A. To convert all Java applications into machine code
+B. To understand complex logic, methods, classes, and program execution flow
+C. To automatically remove all external dependencies
+D. To replace application documentation permanently
+
+6. A developer receives an unfamiliar Java method containing multiple nested conditions. Which AI capability would be most useful?
+
+A. Code explanation
+B. Git branching
+C. Maven packaging
+D. Database indexing
+
+7. What is the primary objective of code refactoring?
+
+A. To change application functionality completely
+B. To improve code structure, readability, and maintainability without changing its external behavior
+C. To remove all application classes
+D. To convert source code into executable files
+
+8. An AI assistant suggests replacing repeated Java code with a reusable method. Which software engineering principle does this primarily support?
+
+A. Code duplication
+B. Reusability and maintainability
+C. Tight coupling
+D. Increased dependency
+
+9. A Java application contains a method with multiple responsibilities. Which refactoring approach would improve its design?
+
+A. Combine all methods into one large method
+B. Break the method into smaller methods with clearly defined responsibilities
+C. Remove all method parameters
+D. Convert every variable into a global variable
+
+10. Which of the following should a developer verify after accepting AI-generated refactoring suggestions?
+
+A. Whether the code formatting has changed only
+B. Whether existing functionality and expected behavior remain unchanged
+C. Whether the number of source files has increased
+D. Whether the IDE theme has changed
+
+11. What is the primary purpose of generating unit tests using AI?
+
+A. To eliminate the need for application execution
+B. To create test cases that verify individual methods and expected behavior
+C. To automatically deploy the application
+D. To replace the Maven build lifecycle
+
+12. A Java method accepts an integer as input and returns its factorial. Which set of test cases would provide better test coverage?
+
+A. Testing only the input value 5
+B. Testing zero, positive values, invalid negative values, and boundary conditions
+C. Testing only random positive numbers
+D. Testing only the method name
+
+13. Which Java testing framework is commonly used for writing unit tests in Maven-based projects?
+
+A. JUnit
+B. Hibernate
+C. Selenium Grid
+D. Apache Kafka
+
+14. What is the role of assertions in AI-generated unit tests?
+
+A. To generate Java source files
+B. To verify whether actual results match expected results
+C. To install external dependencies
+D. To execute Git commands
+
+15. AI generates a JUnit test for a Java method, but the test passes even when the method contains a logical error. What is the most likely reason?
+
+A. The test may not adequately cover the incorrect behavior
+B. JUnit cannot test Java methods
+C. Maven does not support unit testing
+D. VS Code automatically modifies the test results
+
+16. What is the primary objective of AI-assisted debugging?
+
+A. To automatically delete problematic source code
+B. To identify possible causes of errors and suggest appropriate corrections
+C. To replace all debugging tools
+D. To convert runtime errors into compile-time errors
+
+17. A Java application throws a NullPointerException. How can an AI coding assistant help the developer?
+
+A. By automatically changing the operating system
+B. By analyzing relevant code and suggesting possible null-reference causes and fixes
+C. By deleting the affected Java class
+D. By disabling Java exception handling
+
+18. When using AI to investigate a Maven build failure, which information would be most useful to provide?
+
+A. Only the project name
+B. Error messages, relevant source code, pom.xml configuration, and build command
+C. Only the VS Code theme
+D. The developer's Git username
+
+19. What is the primary purpose of AI-assisted code review?
+
+A. To replace all developers in the review process
+B. To identify potential bugs, code quality issues, security concerns, and maintainability problems
+C. To automatically approve every pull request
+D. To remove the need for version control
+
+20. An AI code review tool identifies a possible SQL injection vulnerability in a Java application. What should the developer do?
+
+A. Ignore the suggestion because AI reviews are always inaccurate
+B. Investigate the finding and verify the vulnerability before applying an appropriate fix
+C. Delete the database configuration
+D. Disable all application logging
+
+21. Which of the following is a major limitation of AI-generated code?
+
+A. AI-generated code cannot contain syntax errors
+B. AI may generate incorrect, insecure, outdated, or inefficient code
+C. AI always understands the complete application architecture
+D. AI-generated code never requires testing
+
+22. What is the most responsible approach when using AI-generated Java code in an enterprise application?
+
+A. Directly deploy generated code without reviewing it
+B. Review, test, validate security, and verify compatibility before integration
+C. Remove all comments generated by AI without inspection
+D. Avoid using version control for AI-generated changes
+
+23. Why should developers avoid sharing passwords, API keys, access tokens, and confidential source code with public AI tools?
+
+A. These details may expose sensitive information and create security or privacy risks
+B. AI tools cannot process Java code containing credentials
+C. It prevents Maven from compiling the application
+D. It reduces Java application execution speed
+
+24. An AI assistant suggests using a Java library that is not declared in the project's pom.xml. What should the developer do before integrating it?
+
+A. Add the library without checking its source
+B. Verify the library's authenticity, version, license, security, and compatibility before adding the Maven dependency
+C. Remove the existing Maven dependencies
+D. Change the Java package name to match the library
+
+25. A development team uses AI to generate Java code, refactor existing classes, create JUnit tests, and review pull requests. Which approach best represents responsible AI-assisted software development?
+
+A. Accept all AI suggestions to maximize development speed
+B. Use AI as a supporting tool while maintaining human review, testing, security validation, and accountability
+C. Allow AI to make all architectural decisions independently
+D. Skip code reviews when AI-generated tests pass
+
+ 
+Q.No.	Answer	Q.No.	Answer
+1	B	14	B
+2	B	15	A
+3	B	16	B
+4	B	17	B
+5	B	18	B
+6	A	19	B
+7	B	20	B
+8	B	21	B
+9	B	22	B
+10	B	23	A
+11	B	24	B
+12	B	25	B
+13	A

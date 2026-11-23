@@ -1,0 +1,198 @@
+1. What is the primary objective of debugging in application development?
+
+A. To improve the visual appearance of source code
+B. To identify, analyze, and resolve defects in application execution
+C. To automatically generate application documentation
+D. To manage external project dependencies
+
+2. What is the primary purpose of setting a breakpoint in a Java application?
+
+A. To terminate the application permanently
+B. To pause execution at a specific location for examining program behavior
+C. To skip compilation of a Java class
+D. To remove runtime exceptions automatically
+
+3. A developer wants to pause program execution only when a variable reaches a particular value. Which debugging feature is most appropriate?
+
+A. Conditional breakpoint
+B. Log file rotation
+C. Maven clean
+D. Git staging
+
+4. What happens when a developer uses Step Over during debugging?
+
+A. The debugger enters every method called by the current statement
+B. The debugger executes the current statement without entering called methods
+C. The debugger terminates the current method immediately
+D. The debugger restarts the application from the beginning
+
+5. What is the primary purpose of Step Into in Java debugging?
+
+A. To execute the current method without interruption
+B. To enter a method call and examine its internal execution
+C. To exit the current method
+D. To skip all remaining statements
+
+6. When should a developer use Step Out during debugging?
+
+A. When the developer wants to execute the current method again
+B. When the developer wants to complete the current method and return to its calling method
+C. When the developer wants to restart the application
+D. When the developer wants to disable all breakpoints
+
+7. Consider the following Java code:
+public void processOrder() {
+    validateOrder();
+    calculateTotal();
+    saveOrder();
+}
+
+
+A developer wants to examine the internal execution of calculateTotal(). Which debugging operation should be used when execution reaches that method call?
+
+A. Step Over
+B. Step Into
+C. Step Out
+D. Continue
+
+8. What is the purpose of the Variables panel in VS Code during Java debugging?
+
+A. To display Maven dependencies
+B. To inspect the current values of local variables, fields, and other accessible variables
+C. To display Git commit history
+D. To configure application logging levels
+
+9. What is the primary advantage of using Watch expressions during debugging?
+
+A. To automatically modify Java source code
+B. To continuously evaluate and monitor selected expressions while execution is paused
+C. To delete unused variables
+D. To restart the application whenever a variable changes
+
+10. A developer wants to monitor the expression order.getTotalAmount() while debugging a Java application. Which feature should be used?
+
+A. Watch
+B. Maven Explorer
+C. Source Control
+D. Output Console
+
+11. What is the purpose of the Call Stack panel in a debugger?
+
+A. To display all Maven dependencies
+B. To show the sequence of method calls leading to the current execution point
+C. To display application database records
+D. To maintain Git branch history
+
+12. A Java application throws an exception inside a method called by three other methods. How can Call Stack analysis help?
+
+A. It identifies the sequence of method invocations leading to the exception
+B. It automatically corrects the exception
+C. It removes all methods from the call hierarchy
+D. It changes the application execution environment
+
+13. What is the difference between a local variable and an instance variable during debugging?
+
+A. Local variables belong to a method or block, while instance variables belong to an object
+B. Local variables are stored only in Git, while instance variables are stored in Maven
+C. Both variables have identical scope and lifetime
+D. Instance variables cannot be inspected during debugging
+
+14. What is the purpose of an exception breakpoint?
+
+A. To pause execution when a specified exception is thrown or caught, depending on the breakpoint configuration
+B. To prevent all exceptions from occurring
+C. To automatically remove exception-handling code
+D. To skip the method in which an exception occurs
+
+15. A Java application stops unexpectedly due to an ArrayIndexOutOfBoundsException. Which debugging approach is most appropriate?
+
+A. Increase the Maven version immediately
+B. Inspect array boundaries, index values, and the statement causing the exception
+C. Disable all exception handling
+D. Delete the affected class and create a new project
+
+16. What is the primary difference between a checked exception and an unchecked exception in Java?
+
+A. Checked exceptions must be handled or declared, while unchecked exceptions are not subject to this compile-time requirement
+B. Checked exceptions occur only in database operations
+C. Unchecked exceptions cannot occur during runtime
+D. Both are always handled automatically by the JVM
+
+17. A developer wants to identify whether a Java method is receiving incorrect input from its calling method. Which debugging technique is most effective?
+
+A. Inspect the method parameters and trace the call stack
+B. Change the application's logging layout
+C. Delete the method's return statement
+D. Reinstall VS Code
+
+18. While debugging a Java application, the developer notices that a variable contains an unexpected value. What should be investigated first?
+
+A. The sequence of assignments and modifications affecting that variable
+B. The operating system desktop theme
+C. The Git repository name
+D. The Maven repository folder name
+
+19. A Java application communicates with a database but returns an empty result set unexpectedly. Which debugging approach is most appropriate?
+
+A. Inspect the SQL query, parameter values, database connection, and returned result set
+B. Modify the VS Code color theme
+C. Remove all Java exception-handling blocks
+D. Delete the Maven target directory only
+
+20. What is the purpose of examining JDBC connection details during database debugging?
+
+A. To identify possible connection failures, configuration issues, and database access problems
+B. To change the Java compiler version automatically
+C. To generate Git commits
+D. To modify application source code formatting
+
+21. A Java REST API returns HTTP status code 500. Which debugging approach would be most effective?
+
+A. Inspect server-side exception details, application logs, and the API execution flow
+B. Modify the API URL without investigating the error
+C. Disable the REST controller
+D. Delete the Maven dependencies
+
+22. When debugging an API request in a Java application, which set of details is most useful to inspect?
+
+A. Request method, URL, headers, payload, response status, and response body
+B. Only the Java class name
+C. Only the application window size
+D. Git commit message and branch name
+
+23. A Java application works correctly when executed locally but fails when calling an external API. What should the developer investigate?
+
+A. Network connectivity, authentication credentials, endpoint configuration, request format, and response details
+B. Only the Java variable naming convention
+C. The IDE font size
+D. The number of source code comments
+
+24. During debugging, a developer changes the value of a variable using the debugger's variable inspection controls. What should the developer understand about this action?
+
+A. It permanently modifies the original Java source code
+B. It changes the variable's value during the current debugging session, not necessarily the source code
+C. It automatically commits the change to Git
+D. It permanently updates the Maven dependency configuration
+
+25. A Java application has an incorrect database result, an unexpected API response, and an exception occurring inside a service method. Which debugging strategy is most appropriate?
+
+A. Restart the application repeatedly without examining execution
+B. Use breakpoints, Step Into/Over, variable inspection, call stack analysis, and request/response examination to isolate the issue
+C. Remove all service-layer methods
+D. Disable database and API logging permanently
+
+ 
+Q.No.	Answer	Q.No.	Answer
+1	B	14	A
+2	B	15	B
+3	A	16	A
+4	B	17	A
+5	B	18	A
+6	B	19	A
+7	B	20	A
+8	B	21	A
+9	B	22	A
+10	A	23	A
+11	B	24	B
+12	A	25	B
+13	A

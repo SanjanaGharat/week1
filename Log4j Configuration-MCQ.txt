@@ -1,0 +1,194 @@
+1. What is the primary purpose of application logging in Java applications?
+
+A. To compile Java source code
+B. To record application events, execution information, warnings, and errors
+C. To manage Maven dependencies
+D. To replace exception handling
+
+2. Which of the following is the most appropriate advantage of using Log4j2 over basic System.out.println() statements?
+
+A. Log4j2 automatically removes all runtime errors
+B. Log4j2 provides configurable logging levels, output destinations, and formatting
+C. Log4j2 eliminates the need for Java classes
+D. Log4j2 automatically optimizes database queries
+
+3. Which logging level is generally used to capture detailed diagnostic information during application development?
+
+A. FATAL
+B. ERROR
+C. DEBUG
+D. OFF
+
+4. Which of the following represents the correct order of Log4j2 logging levels from highest severity to lowest severity?
+
+A. DEBUG, INFO, WARN, ERROR, FATAL
+B. FATAL, ERROR, WARN, INFO, DEBUG, TRACE
+C. INFO, DEBUG, ERROR, FATAL, WARN
+D. TRACE, DEBUG, INFO, ERROR, FATAL
+
+5. A Java application encounters a condition that may cause a problem but does not immediately stop execution. Which logging level is most appropriate?
+
+A. TRACE
+B. WARN
+C. OFF
+D. DEBUG
+
+6. What is the primary responsibility of a Logger in Log4j2?
+
+A. To define the database connection
+B. To generate logging events from application code
+C. To compile Java classes
+D. To manage Maven build dependencies
+
+7. What is the primary function of an Appender in Log4j2?
+
+A. To determine where logging events are delivered
+B. To define Java package names
+C. To compile application source code
+D. To manage application memory
+
+8. What is the responsibility of a Layout in Log4j2?
+
+A. To decide which Java classes should be compiled
+B. To control how logging events are formatted before output
+C. To determine the application execution sequence
+D. To manage database transactions
+
+9. Which combination correctly describes the relationship between Logger, Appender, and Layout?
+
+A. Logger generates events, Appender delivers them, and Layout formats them
+B. Logger formats events, Layout delivers them, and Appender compiles them
+C. Appender generates events, Logger stores them, and Layout executes them
+D. Layout generates events, Logger compiles them, and Appender manages dependencies
+
+10. Which configuration file format is commonly supported by Log4j2?
+
+A. log4j2.xml
+B. pom.java
+C. logger.class
+D. logging.exe
+
+11. In a Maven-based Java project, what is required to use Log4j2 functionality?
+
+A. Only installing the VS Code theme extension
+B. Adding the appropriate Log4j2 dependencies to pom.xml
+C. Removing the JDK from the development environment
+D. Creating a Git repository before writing Java code
+
+12. Which Log4j2 component is generally used to display logging messages in the console?
+
+A. FileAppender
+B. ConsoleAppender
+C. RollingFileAppender
+D. DatabaseAppender
+
+13. Which Appender is most appropriate when application logs need to be written to a file?
+
+A. ConsoleAppender
+B. FileAppender
+C. MemoryAppender
+D. LayoutAppender
+
+14. What is the primary purpose of a RollingFileAppender in Log4j2?
+
+A. To delete all application logs whenever the application starts
+B. To manage log file rotation based on configured policies such as size or time
+C. To compile log files into Java classes
+D. To automatically correct logging statements
+
+15. A Java application generates large log files every day. Which Log4j2 feature would be most useful to manage log storage?
+
+A. IntelliSense
+B. Rolling policies with file retention configuration
+C. Git branching
+D. Maven dependency exclusion
+
+16. What is the purpose of a TimeBasedTriggeringPolicy in Log4j2?
+
+A. To rotate log files based on a configured time interval
+B. To rotate log files whenever a Java method executes
+C. To stop logging when an exception occurs
+D. To compile log files at fixed intervals
+
+17. What is the purpose of a SizeBasedTriggeringPolicy?
+
+A. To rotate log files when they reach a configured size threshold
+B. To rotate files after every database transaction
+C. To change logging levels dynamically based on user roles
+D. To delete all files larger than the Java heap size
+
+18. Which logging approach is most appropriate when handling exceptions in a Java application?
+
+A. Log only the exception message without any additional information
+B. Log the exception along with its stack trace for troubleshooting
+C. Ignore all exceptions after catching them
+D. Replace all exceptions with System.out.println() statements
+
+19. In Log4j2, which approach correctly logs an exception with its stack trace?
+
+A. logger.info("Error occurred");
+B. logger.error("Error occurred", exception);
+C. logger.debug(exception.getMessage());
+D. logger.warn("Exception ignored");
+
+20. What is the main advantage of using parameterized logging in Log4j2?
+
+A. It improves readability and can avoid unnecessary string construction when a log level is disabled
+B. It automatically converts all logs into JSON
+C. It removes the need for Appenders
+D. It prevents all application exceptions
+
+21. Consider the following Java statement:
+
+logger.debug("Processing customer ID: {}", customerId);
+
+What does {} represent in this statement?
+
+A. A Java class declaration
+B. A placeholder for a logging parameter
+C. A Maven dependency reference
+D. A file rotation instruction
+
+22. A developer has configured the root logger at INFO level. Which messages will generally be enabled by this level?
+
+A. Only TRACE and DEBUG
+B. INFO, WARN, ERROR, and FATAL
+C. Only DEBUG and INFO
+D. Only FATAL
+
+23. A Java application uses Log4j2 but does not generate any log output. Which troubleshooting step should be performed first?
+
+A. Delete the entire Maven project
+B. Verify the Log4j2 dependencies, configuration file location, logger level, and Appender configuration
+C. Change the Java package name
+D. Remove all application classes
+
+24. What is the primary purpose of using separate logging configurations for development and production environments?
+
+A. To change the Java programming language between environments
+B. To control logging verbosity, destinations, and operational requirements based on the environment
+C. To eliminate the need for application monitoring
+D. To prevent developers from using Maven
+
+25. A production Java application uses Log4j2 to record errors, maintain historical logs, and support troubleshooting. Which configuration approach is most appropriate?
+
+A. Use only console logging with TRACE enabled permanently
+B. Configure suitable logging levels, rolling file appenders, retention policies, and exception stack traces
+C. Disable all logging to improve application performance
+D. Write all log messages directly into Java source files
+
+ 
+Q.No.	Answer	Q.No.	Answer
+1	B	14	B
+2	B	15	B
+3	C	16	A
+4	B	17	A
+5	B	18	B
+6	B	19	B
+7	A	20	A
+8	B	21	B
+9	A	22	B
+10	A	23	B
+11	B	24	B
+12	B	25	B
+13	B

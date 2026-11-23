@@ -1,0 +1,190 @@
+1. What is the primary objective of log-based troubleshooting in a Java application?
+
+A. To modify application source code automatically
+B. To identify, investigate, and resolve application issues using recorded log information
+C. To replace the Java compiler
+D. To manage Maven dependencies
+
+2. Which information is generally most useful when analyzing an application log entry?
+
+A. Timestamp, log level, logger name, message, and exception details
+B. Only the Java class name
+C. Only the application version
+D. Only the developer's username
+
+3. A Java application generates thousands of log entries. Which approach is most effective for identifying critical application failures?
+
+A. Read every log entry manually without filtering
+B. Filter logs using severity levels, timestamps, and relevant keywords
+C. Delete older log entries immediately
+D. Disable application logging
+
+4. Which Log4j2 logging level is most appropriate for recording an unexpected application failure?
+
+A. TRACE
+B. DEBUG
+C. ERROR
+D. OFF
+
+5. What is the primary difference between an ERROR log and a WARN log?
+
+A. ERROR generally indicates a failure, while WARN indicates a potentially problematic condition
+B. WARN always indicates application termination
+C. ERROR is used only for debugging variables
+D. Both levels represent identical severity
+
+6. A developer notices repeated WARN messages indicating that database connections are approaching their configured limit. What should this suggest?
+
+A. The application is necessarily functioning perfectly
+B. There may be a resource management or connection pooling issue
+C. The Java compiler has failed
+D. Git integration is unavailable
+
+7. Why are timestamps important when analyzing application logs?
+
+A. They identify the Java compiler version
+B. They help establish the chronological sequence of application events
+C. They automatically identify the developer responsible
+D. They determine the Maven dependency versions
+
+8. A Java application fails at 10:35 AM. Which log analysis approach is most useful initially?
+
+A. Examine relevant logs around the failure timestamp
+B. Examine only logs generated during application installation
+C. Delete all logs before 10:35 AM
+D. Review only the latest Git commit
+
+9. What does log correlation mean in application troubleshooting?
+
+A. Combining unrelated log files into a single document
+B. Connecting related log events across application components using common identifiers and contextual information
+C. Removing duplicate Java classes
+D. Converting application logs into Maven dependencies
+
+10. In a distributed Java application, why is a correlation ID useful?
+
+A. It identifies the Java compiler
+B. It helps trace a single request across multiple services and components
+C. It automatically fixes network failures
+D. It replaces database transaction management
+
+11. A customer reports that an order was not processed. Which information would be most useful for correlating logs related to that transaction?
+
+A. Customer transaction ID, request ID, timestamp, and service details
+B. VS Code theme and font size
+C. Maven installation directory
+D. Java source file line count
+
+12. What is the primary purpose of root-cause analysis (RCA)?
+
+A. To identify the underlying reason for an application failure rather than only addressing its symptoms
+B. To restart the application whenever an error occurs
+C. To remove all warning messages
+D. To generate additional application dependencies
+
+13. A Java application frequently throws NullPointerException errors in a service method. Which troubleshooting approach best supports root-cause analysis?
+
+A. Suppress all exception messages
+B. Investigate the affected object, input values, calling sequence, and relevant stack traces
+C. Change the application's log file name
+D. Disable the service method permanently
+
+14. What is the significance of a stack trace in application log analysis?
+
+A. It provides information about the sequence of method calls associated with an exception
+B. It provides the complete Maven dependency list
+C. It displays all Git branches
+D. It automatically identifies the exact business requirement
+
+15. A Java application logs an exception but continues running. What should the troubleshooting engineer investigate?
+
+A. Whether the exception was handled correctly and whether it caused partial transaction or business-process failure
+B. Whether the IDE theme is configured correctly
+C. Whether the Git repository contains enough branches
+D. Whether all Java classes have the same name
+
+16. What is the primary benefit of maintaining structured logs in a Java application?
+
+A. They make log data easier to search, filter, parse, and analyze
+B. They eliminate all application exceptions
+C. They replace the need for database backups
+D. They automatically optimize Java memory usage
+
+17. Which logging information is most useful when investigating a database connection failure in production?
+
+A. Database connection errors, connection timeout details, timestamps, and relevant application context
+B. Only the application window title
+C. Only the number of Java source files
+D. Git commit messages without application logs
+
+18. A Java REST API starts returning HTTP 500 errors after a new deployment. What should be the first troubleshooting step?
+
+A. Immediately roll back without examining any evidence
+B. Examine application logs around the deployment and failure timestamps, including exception details
+C. Delete all existing API endpoints
+D. Disable all server-side logging
+
+19. What is the purpose of correlating application logs with deployment information?
+
+A. To identify whether failures are associated with recent code changes, configuration updates, or dependency changes
+B. To automatically generate a new Java project
+C. To remove old Maven dependencies without validation
+D. To replace the application testing process
+
+20. A production application experiences intermittent performance degradation. Which log information would be most useful for investigation?
+
+A. Request processing times, timestamps, resource-related warnings, and error frequency
+B. Only the Java package names
+C. Only the number of application developers
+D. VS Code extension installation history
+
+21. Why should developers avoid logging sensitive information such as passwords, authentication tokens, and personal data?
+
+A. Such information may create security, privacy, and compliance risks
+B. It prevents Java compilation
+C. It increases the number of Maven dependencies
+D. It automatically generates runtime exceptions
+
+22. During production troubleshooting, why is it important to preserve historical application logs?
+
+A. To support investigation of recurring issues and establish patterns over time
+B. To increase the application's source code size
+C. To prevent future application deployments
+D. To eliminate the need for monitoring tools
+
+23. A Java application generates excessive DEBUG logs in production, resulting in increased storage consumption and difficulty identifying important errors. What is the most appropriate corrective action?
+
+A. Disable all logging permanently
+B. Configure suitable production logging levels and retain essential operational information
+C. Increase DEBUG logging further
+D. Remove all exception-handling mechanisms
+
+24. Multiple Java services report errors at approximately the same timestamp. What is the most effective approach to investigate the issue?
+
+A. Analyze each service independently without considering relationships
+B. Correlate timestamps, request IDs, service dependencies, and error sequences across services
+C. Delete logs from all services
+D. Restart all services without examining their logs
+
+25. A production Java application experiences repeated API timeouts, database connection failures, and intermittent HTTP 500 responses. Which troubleshooting strategy is most appropriate?
+
+A. Fix only the first visible error and ignore the remaining symptoms
+B. Correlate logs across application, API, and database components, examine timestamps and stack traces, identify the underlying cause, and validate the corrective action
+C. Disable error logging to improve performance
+D. Replace all application source code without investigation
+
+ 
+Q.No.	Answer	Q.No.	Answer
+1	B	14	A
+2	A	15	A
+3	B	16	A
+4	C	17	A
+5	A	18	B
+6	B	19	A
+7	B	20	A
+8	A	21	A
+9	B	22	A
+10	B	23	B
+11	A	24	B
+12	A	25	B
+13	B

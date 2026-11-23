@@ -1,0 +1,192 @@
+1. What is the primary role of VS Code in Java application development?
+
+A. To execute database queries without additional tools
+B. To provide an environment for writing, debugging, navigating, and managing Java code
+C. To replace the Java Development Kit (JDK)
+D. To automatically generate all application business logic
+
+2. Which VS Code extension is commonly used to provide Java language support?
+
+A. Python Extension Pack
+B. Extension Pack for Java
+C. Docker Extension
+D. Live Server Extension
+
+3. What is the primary responsibility of the Java Development Kit (JDK) in a Java development environment?
+
+A. To manage Git repositories
+B. To provide Java development tools, including the compiler and runtime components
+C. To manage Maven project dependencies only
+D. To provide graphical debugging interfaces only
+
+4. In a standard Maven Java project, where are application source code files typically maintained?
+
+A. src/main/java
+B. src/test/resources
+C. target/classes
+D. .mvn/config
+
+5. What is the primary purpose of the pom.xml file in a Maven project?
+
+A. To store Java compiled bytecode
+B. To define project configuration, dependencies, plugins, and build settings
+C. To maintain Git commit history
+D. To store runtime application logs
+
+6. Which Maven convention is generally used to store Java unit test source files?
+
+A. src/main/java
+B. src/main/resources
+C. src/test/java
+D. target/test-classes
+
+7. What is the purpose of the Maven groupId element in pom.xml?
+
+A. To identify the version of the Java compiler
+B. To identify the organization or group responsible for the project
+C. To define the project build directory
+D. To specify the application execution port
+
+8. Which Maven element uniquely identifies an artifact within a group?
+
+A. artifactId
+B. dependencyId
+C. buildId
+D. pluginId
+
+9. What happens when the following Maven command is executed?
+
+mvn clean
+
+A. Compiles all Java source files
+B. Removes the generated build output directory, typically target
+C. Installs dependencies into the local repository
+D. Executes all unit tests
+
+10. Which Maven command is commonly used to compile the main Java source code?
+
+A. mvn clean
+B. mvn compile
+C. mvn install
+D. mvn deploy
+
+11. What is the primary purpose of the Maven test phase?
+
+A. To execute configured unit tests
+B. To upload the application to a production server
+C. To delete project dependencies
+D. To generate Git branches
+
+12. What is the difference between Maven package and install phases?
+
+A. Package generates the project artifact, while install also places it in the local Maven repository
+B. Package installs dependencies, while install deletes generated artifacts
+C. Both phases perform exactly the same operation
+D. Install only executes Java source code without compiling it
+
+13. What is the purpose of the Maven dependency section in pom.xml?
+
+A. To configure application user interfaces
+B. To declare external libraries required by the project
+C. To define Git branch policies
+D. To configure VS Code themes
+
+14. Where does Maven typically store downloaded dependencies on a developer's local machine?
+
+A. Inside the src/main/java directory
+B. Inside the local Maven repository, typically .m2/repository
+C. Inside the Git .git directory
+D. Inside the Java bin directory
+
+15. A developer adds a new dependency to pom.xml. What is generally required to make the dependency available to the Java project?
+
+A. Restart the operating system
+B. Reload or update the Maven project so the dependency can be resolved
+C. Delete all Java source files
+D. Create a new Git repository
+
+16. Which VS Code feature helps a Java developer navigate directly to a method's declaration?
+
+A. Go to Definition
+B. Source Control
+C. Terminal History
+D. Output Filtering
+
+17. What is the primary purpose of the target directory in a Maven project?
+
+A. To store original Java source code
+B. To store generated build outputs such as compiled classes and packaged artifacts
+C. To store Git branches
+D. To maintain Maven dependency declarations
+
+18. During Java debugging in VS Code, what is the purpose of a breakpoint?
+
+A. To permanently stop the application from executing
+B. To pause execution at a selected statement for investigation
+C. To remove compilation errors automatically
+D. To skip the execution of an entire class
+
+19. While debugging a Java application, which feature allows developers to examine the current values of variables?
+
+A. Variables panel
+B. Source Control panel
+C. Extensions Marketplace
+D. Maven Explorer
+
+20. What is the purpose of the launch.json file in VS Code?
+
+A. To configure Java application debugging and launch settings
+B. To define Maven dependencies
+C. To store Java class definitions
+D. To configure Git remote repositories
+
+21. What is the purpose of the Git staging area?
+
+A. To permanently store compiled Java classes
+B. To select and prepare specific changes for the next commit
+C. To download Maven dependencies
+D. To execute Java unit tests
+
+22. A developer creates a separate Git branch to implement a new Java feature. What is the primary advantage?
+
+A. It automatically increases application performance
+B. It allows feature development independently without directly modifying the main branch
+C. It removes the need for Maven builds
+D. It automatically resolves merge conflicts
+
+23. What is the primary difference between git fetch and git pull?
+
+A. Fetch retrieves remote changes without integrating them, while pull retrieves and integrates them
+B. Fetch deletes remote branches, while pull creates new repositories
+C. Fetch commits local changes, while pull stages files
+D. Both commands perform exactly the same operation
+
+24. A Java project builds successfully on one developer's machine but fails on another due to different JDK versions. Which approach is most appropriate to address this issue?
+
+A. Remove Maven from the project
+B. Configure and standardize the Java version through Maven compiler settings and the development environment
+C. Delete the project's pom.xml file
+D. Disable all VS Code Java extensions
+
+25. A developer wants to clean the previous build output, compile Java code, execute tests, package the application, and install the artifact into the local Maven repository. Which command sequence is most appropriate?
+
+A. mvn clean followed by mvn install
+B. mvn test followed by mvn clean
+C. mvn deploy followed by mvn compile
+D. mvn package followed by mvn validate
+
+ 
+Q.No.	Answer	Q.No.	Answer
+1	B	14	B
+2	B	15	B
+3	B	16	A
+4	A	17	B
+5	B	18	B
+6	C	19	A
+7	B	20	A
+8	A	21	B
+9	B	22	B
+10	B	23	A
+11	A	24	B
+12	A	25	A
+13	B

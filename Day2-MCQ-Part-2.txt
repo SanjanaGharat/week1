@@ -1,0 +1,386 @@
+Questions 1–30
+
+1. In Spring Security, what is the primary difference between authentication and authorization?
+
+A. Authentication validates user permissions, while authorization validates passwords.
+B. Authentication verifies user identity, while authorization determines access permissions.
+C. Authentication manages sessions, while authorization encrypts credentials.
+D. Authentication validates API requests, while authorization generates JWT tokens.
+
+2. Which Spring Security component is primarily responsible for processing authentication requests?
+
+A. DispatcherServlet
+B. AuthenticationManager
+C. JdbcTemplate
+D. ModelAndView
+
+3. What is the primary responsibility of UserDetailsService in Spring Security?
+
+A. Encrypting user passwords before storing them.
+B. Generating JWT tokens for authenticated users.
+C. Loading user-specific data during authentication.
+D. Managing HTTP sessions and cookies.
+
+4. Which password encoder is recommended for securely storing passwords in a Spring application?
+
+A. Base64Encoder
+B. MD5PasswordEncoder
+C. BCryptPasswordEncoder
+D. PlainTextPasswordEncoder
+
+5. What is the purpose of a password salt in password hashing?
+
+A. To make the password reversible.
+B. To ensure identical passwords produce different hashes.
+C. To reduce the password length.
+D. To eliminate the need for password hashing.
+
+6. In a Spring Security application, what does the SecurityContextHolder maintain?
+
+A. Database connection information.
+B. Current authenticated user's security context.
+C. Application configuration properties.
+D. HTTP request validation rules.
+
+7. Which approach is most appropriate for implementing role-based access control in Spring Security?
+
+A. Using @Autowired on controller methods.
+B. Using @PreAuthorize("hasRole('ADMIN')").
+C. Using @Transactional on service classes.
+D. Using @ResponseBody on restricted endpoints.
+
+8. What is the difference between hasRole("ADMIN") and hasAuthority("ROLE_ADMIN") in Spring Security?
+
+A. Both always behave differently and require separate databases.
+B. hasRole("ADMIN") typically checks for the ROLE_ADMIN authority prefix.
+C. hasAuthority() is only used for JWT authentication.
+D. hasRole() works only with HTTP Basic authentication.
+
+9. What is the main security risk of using HTTP sessions without appropriate session management?
+
+A. Increased database normalization.
+B. Session fixation and unauthorized session reuse.
+C. Reduced application startup time.
+D. Incorrect dependency injection.
+
+10. What does session fixation protection help prevent?
+
+A. An attacker forcing a victim to authenticate using a session ID known to the attacker.
+B. An attacker reading database tables directly.
+C. An attacker modifying application source code.
+D. An attacker generating invalid JSON responses.
+
+11. In Spring Security, what is the purpose of SessionCreationPolicy.STATELESS?
+
+A. It creates a new HTTP session for every request.
+B. It disables all authentication mechanisms.
+C. It prevents Spring Security from creating or using an HTTP session to obtain the SecurityContext.
+D. It stores authentication information permanently in the database.
+
+12. Which statement best describes a JSON Web Token (JWT)?
+
+A. An encrypted database backup file.
+B. A compact token format used to securely transmit claims between parties.
+C. A Java serialization format for session objects.
+D. A password hashing algorithm.
+
+13. Which three components make up a standard JWT?
+
+A. Header, Payload, Signature.
+B. Username, Password, Session ID.
+C. Client ID, Server ID, Database ID.
+D. Request, Response, Authentication.
+
+14. What information is generally stored in the JWT payload?
+
+A. Only the user's encrypted password.
+B. Claims such as subject, expiration time and roles.
+C. Complete database records.
+D. Private signing keys.
+
+15. Which JWT claim specifies the token expiration time?
+
+A. iss
+B. sub
+C. exp
+D. aud
+
+16. Why should sensitive information not be stored in a JWT payload?
+
+A. JWT payloads are always encrypted automatically.
+B. JWT payloads are typically Base64URL-encoded, not encrypted, and can be decoded by anyone possessing the token.
+C. JWT payloads cannot contain text values.
+D. JWT payloads are stored only in the server database.
+
+17. What is the purpose of the JWT signature?
+
+A. To hide the payload from the client.
+B. To verify token integrity and authenticity.
+C. To compress the token size.
+D. To store user session information.
+
+18. What should a Spring Boot API do when receiving a JWT?
+
+A. Decode the payload and trust all claims without verification.
+B. Verify the signature and validate relevant claims such as expiration and issuer.
+C. Store the token in a database before every request.
+D. Accept the token if it contains a valid username.
+
+19. Which JWT signing algorithm uses a shared secret key?
+
+A. HS256
+B. RS256
+C. ES256
+D. PS256
+
+20. What is a major advantage of using RS256 for JWT signing?
+
+A. It does not require any cryptographic keys.
+B. It uses a private key for signing and a public key for verification.
+C. It automatically encrypts the JWT payload.
+D. It eliminates the need to validate token expiration.
+
+21. What is the most appropriate way to handle an expired JWT?
+
+A. Accept it if the username exists.
+B. Extend its expiration time automatically on the client.
+C. Reject the token and require a valid authentication or refresh process.
+D. Ignore the expiration claim if the signature is valid.
+
+22. Which technique helps protect an application against SQL Injection?
+
+A. Concatenating user input into SQL queries.
+B. Using parameterized queries or prepared statements.
+C. Disabling database constraints.
+D. Storing SQL queries in browser cookies.
+
+23. Consider the following SQL query:
+SELECT * FROM users
+WHERE username = ' " + username + " ';
+
+
+What is the primary security weakness?
+
+A. Improper object mapping.
+B. SQL Injection due to unsafe query construction.
+C. Cross-Site Request Forgery.
+D. Session fixation.
+
+24. Which Spring technology helps reduce SQL Injection risks when used correctly?
+
+A. Spring Data JPA with parameterized repository queries.
+B. Spring MVC ViewResolver.
+C. Spring ApplicationEventPublisher.
+D. Spring Scheduling.
+
+25. What is Cross-Site Scripting (XSS)?
+
+A. An attack that injects malicious scripts into web pages viewed by other users.
+B. An attack that steals database backup files.
+C. An attack that modifies HTTP session configuration.
+D. An attack that intercepts server-to-server communication only.
+
+26. Which practice is most effective in preventing XSS?
+
+A. Disabling all HTTP methods.
+B. Encoding output according to its context and validating input appropriately.
+C. Storing all input in encrypted database columns.
+D. Using only POST requests instead of GET requests.
+
+27. What is Cross-Site Request Forgery (CSRF)?
+
+A. An attack that tricks an authenticated user's browser into sending an unwanted request.
+B. An attack that modifies Java bytecode.
+C. An attack that generates fake JWT signatures.
+D. An attack that directly executes SQL commands on a database.
+
+28. Why is CSRF protection particularly important for applications using session-based authentication?
+
+A. Browsers automatically attach relevant cookies to requests, potentially including maliciously initiated requests.
+B. Session-based applications cannot use HTTPS.
+C. Session IDs are always stored in plain text in databases.
+D. CSRF protection encrypts all session cookies.
+
+29. In Spring Security, what is a suitable approach for a stateless REST API that uses JWTs in the Authorization header?
+
+A. Always disable authentication.
+B. Disable CSRF only after confirming the API does not rely on automatically attached browser credentials for authentication.
+C. Store passwords in the JWT payload.
+D. Enable form-based login for every API endpoint.
+
+30. Which principle best describes the secure coding practice of granting users only the permissions necessary to perform their tasks?
+
+A. Separation of concerns.
+B. Principle of least privilege.
+C. Code reusability.
+D. Dependency inversion.
+
+
+31. In a Spring Security request-processing flow, which component typically intercepts incoming HTTP requests and applies security filters?
+
+A. DispatcherServlet
+B. SecurityFilterChain
+C. EntityManagerFactory
+D. JdbcTemplate
+
+32. What is the primary purpose of OncePerRequestFilter when implementing JWT authentication?
+
+A. To execute authentication logic multiple times for every request.
+B. To provide a filter implementation designed to execute once per request dispatch, subject to its dispatch behavior.
+C. To create database sessions automatically.
+D. To encrypt HTTP response bodies.
+
+33. In a JWT-based Spring Security application, where is a JWT commonly extracted from an incoming HTTP request?
+
+A. Accept header.
+B. Authorization header with the Bearer scheme.
+C. Content-Length header.
+D. Referer header.
+
+34. What should happen when a request contains a JWT with an invalid signature?
+
+A. The application should authenticate the user based on the payload.
+B. The application should reject the token and deny authentication.
+C. The application should generate a new signature automatically.
+D. The application should accept the token if it has not expired.
+
+35. What is the primary responsibility of an AuthenticationEntryPoint in Spring Security?
+
+A. Handling unauthenticated access attempts, commonly returning HTTP 401.
+B. Assigning database roles to users.
+C. Generating password hashes.
+D. Managing application transactions.
+
+36. What is the primary role of an AccessDeniedHandler?
+
+A. Handling access-denied situations when an authenticated user lacks required permissions.
+B. Authenticating users with OAuth credentials.
+C. Creating JWT refresh tokens.
+D. Encrypting database passwords.
+
+37. Which HTTP status code is most appropriate when a user is authenticated but lacks permission to access a resource?
+
+A. 200
+B. 201
+C. 401
+D. 403
+
+38. Which HTTP status code generally indicates that authentication is required or has failed?
+
+A. 400
+B. 401
+C. 403
+D. 404
+
+39. What is the most secure way to handle sensitive information such as API keys and database passwords in a Spring Boot application?
+
+A. Hardcode them in Java classes.
+B. Commit them into a public Git repository.
+C. Store them in environment variables or a secure secrets-management system.
+D. Include them in JWT claims.
+
+40. Why should sensitive data be masked in application logs?
+
+A. To reduce the number of log files.
+B. To prevent credentials, personal information or tokens from being exposed through logs.
+C. To improve database query performance.
+D. To make debugging impossible.
+
+41. Which information should generally NOT be logged in a Spring Boot application?
+
+A. Authentication failure events.
+B. Application error codes.
+C. Complete passwords and access tokens.
+D. Security-relevant administrative actions.
+
+42. Which approach is best for logging security events?
+
+A. Log all request and response bodies without filtering.
+B. Record relevant events with timestamps, user or actor identifiers where appropriate, outcomes and correlation IDs, while avoiding sensitive data.
+C. Disable logging for authentication and authorization failures.
+D. Store all logs in browser local storage.
+
+43. What is the main purpose of API rate limiting?
+
+A. To increase the number of database tables.
+B. To restrict excessive requests and reduce abuse, brute-force attempts or denial-of-service risks.
+C. To encrypt JWT tokens.
+D. To replace authorization checks.
+
+44. Which HTTP method is generally considered idempotent?
+
+A. POST
+B. PATCH
+C. GET
+D. CONNECT
+
+45. What is the main security benefit of enforcing HTTPS for API communication?
+
+A. It prevents every type of application-level attack.
+B. It protects data in transit through encryption and helps provide server authentication and integrity.
+C. It eliminates the need for JWT validation.
+D. It automatically prevents SQL Injection.
+
+46. Which validation strategy is most appropriate for an API receiving user registration data?
+
+A. Accept all fields and validate only at the database level.
+B. Validate input on the server using constraints such as @NotBlank, @Email and @Size.
+C. Trust frontend JavaScript validation alone.
+D. Allow unrestricted input to improve flexibility.
+
+47. In Spring Boot, which annotation is commonly used to trigger Bean Validation on a request DTO?
+
+A. @Autowired
+B. @Transactional
+C. @Valid
+D. @ComponentScan
+
+48. What is the primary purpose of security testing in a Spring Boot application?
+
+A. To verify only application performance.
+B. To identify vulnerabilities in authentication, authorization, input validation and request processing.
+C. To check only whether the application compiles.
+D. To confirm that all database queries return records.
+
+49. Which testing approach verifies that a user with the USER role cannot access an endpoint restricted to the ADMIN role?
+
+A. Unit testing of utility methods only.
+B. Authorization integration testing.
+C. Database migration testing.
+D. UI rendering testing.
+
+50. A Spring Boot application uses JWT authentication. A user logs in successfully, receives a valid token, and then attempts to access an admin endpoint without the required role. What should the application do?
+
+A. Allow access because the JWT signature is valid.
+B. Reject the request because authentication alone does not establish authorization.
+C. Generate a new JWT with admin privileges.
+D. Disable role checking for authenticated users.
+
+Separate Answer Key
+For trainer/evaluator use – keep separate from the candidate question paper.
+Q.No.	Answer	Q.No.	Answer
+1	B	26	B
+2	B	27	A
+3	C	28	A
+4	C	29	B
+5	B	30	B
+6	B	31	B
+7	B	32	B
+8	B	33	B
+9	B	34	B
+10	A	35	A
+11	C	36	A
+12	B	37	D
+13	A	38	B
+14	B	39	C
+15	C	40	B
+16	B	41	C
+17	B	42	B
+18	B	43	B
+19	A	44	C
+20	B	45	B
+21	C	46	B
+22	B	47	C
+23	B	48	B
+24	A	49	B
+25	A	50	B
